@@ -1,0 +1,11 @@
+environment:
+  nodejs_version: 4
+platform:
+  - x86
+  - x64
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - npm i -g npm
+  - npm i
+test_script: npm t
+build: off

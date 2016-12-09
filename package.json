@@ -1,0 +1,33 @@
+{
+	"name": "milligram-starter",
+	"version": "0.0.0",
+	"description": "Boilerplate for getting started with Milligram.",
+	"homepage": "https://milligram.github.io",
+	"repository": "milligram/milligram-starter",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"engines": {
+		"node": ">=4"
+	},
+	"dependencies": {
+		"milligram": "latest"
+	},
+	"devDependencies": {
+		"bower": "^1.8.0",
+		"browser-sync": "^2.18.2",
+		"ncp": "^2.0.0",
+		"npm-run-all": "^3.1.2",
+		"onchange": "^3.2.0",
+		"rimraf": "^2.5.4"
+	},
+	"scripts": {
+		"start": "run-s clean bower build && run-p watch serve",
+		"clean": "rimraf dist",
+		"bower": "bower i",
+		"build": "ncp src dist",
+		"watch": "onchange src/* -- run-s build",
+		"serve": "browser-sync --no-notify start -s dist -f dist",
+		"test": "run-s clean bower build",
+		"prestart": "npm i"
+	}
+}
