@@ -1,13 +1,13 @@
 <a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework"></a>
 
-> A minimalist CSS framework.
+> Boilerplate for getting started with Milligram.
 
-[![Travis Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram?branch=master)
-[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/xcm8meymwerq0r82?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram)
-[![Codacy Status](https://img.shields.io/codacy/grade/848fb4bd6902434fab0bcfb5461284fe/master.svg)](https://www.codacy.com/app/milligram/milligram/dashboard)
-[![Dependencies Status](https://david-dm.org/milligram/milligram.svg)](https://travis-ci.org/milligram/milligram?branch=master)
-[![Download Status](https://img.shields.io/npm/dt/milligram.svg)](https://www.npmjs.com/package/milligram)
-[![Version Status](https://badge.fury.io/js/milligram.svg)](https://www.npmjs.com/package/milligram)
+[![Travis Status](https://travis-ci.org/milligram/milligram-starter.svg?branch=master)](https://travis-ci.org/milligram/milligram-starter?branch=master)
+[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/djotpoy1698b3k9k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram-starter)
+[![Codacy Status](https://img.shields.io/codacy/grade/13f5caac73ed4964a2394aa857ebc3a2/master.svg)](https://www.codacy.com/app/milligram/milligram-starter/dashboard)
+[![Dependencies Status](https://david-dm.org/milligram/milligram-starter.svg)](https://travis-ci.org/milligram/milligram-starter?branch=master)
+[![Download Status](https://img.shields.io/npm/dt/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
+[![Version Status](https://badge.fury.io/js/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
 
 
@@ -16,19 +16,25 @@
 Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
 
 
-## Download
-
-**Install with Bower**
+## Getting Started
 
 ```sh
-$ bower install milligram
+  npm install -g milligram-cli
+  milligram-cli init your_new_app
+  cd your_new_app
+  npm start
 ```
 
-**Install with npm**
 
-```sh
-$ npm install milligram
-```
+## Available Commands
+
+- `npm run start` - starts the development server with hot reloading enabled
+
+- `npm run build` - generates the distribution files
+
+- `npm run bower` - install all dependencies
+
+- `npm run test` - start the test runner
 
 
 ## Table of Contents
