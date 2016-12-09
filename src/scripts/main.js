@@ -1,5 +1,3 @@
 'use strict';
 
-;(function() {
-	console.log('Here go!');
-})();
+console.log('Hello world!');
