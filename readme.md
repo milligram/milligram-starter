@@ -1,4 +1,4 @@
-<a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework"></a>
+<a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
 
 > Boilerplate for getting started with Milligram.
 
@@ -19,9 +19,8 @@ Milligram provides a minimal setup of styles for a fast and clean starting point
 ## Getting Started
 
 ```sh
-  npm install -g milligram-cli
-  milligram-cli init your_new_app
-  cd your_new_app
+  git clone https://github.com/milligram/milligram-starter.git myApp
+  cd myApp
   npm start
 ```
 
