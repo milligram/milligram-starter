@@ -1,7 +1,7 @@
 {
 	"name": "milligram-starter",
 	"version": "0.0.2",
-	"description": "Boilerplate for getting started with Milligram.",
+	"description": "A super simple boilerplate project with Milligram.",
 	"homepage": "https://milligram.github.io",
 	"repository": "milligram/milligram-starter",
 	"license": "MIT",

@@ -1,6 +1,6 @@
 <a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
 
-> Boilerplate for getting started with Milligram.
+> A super simple boilerplate project with Milligram.
 
 [![Travis Status](https://travis-ci.org/milligram/milligram-starter.svg?branch=master)](https://travis-ci.org/milligram/milligram-starter?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/djotpoy1698b3k9k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram-starter)
@@ -13,15 +13,23 @@
 
 ## Why it's awesome?
 
-Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
+It offers a super simple boilerplate project with Milligram.
 
 
 ## Getting Started
 
+First install the CLI for getting started with Milligram.
+
 ```sh
-  git clone https://github.com/milligram/milligram-starter.git myApp
-  cd myApp
-  npm start
+$ npm install -g milligram-cli
+```
+
+Create a new app using the command `milligram init`, then install dependencies and run with `npm start`.
+
+```sh
+$ milligram init new_app
+$ cd new_app
+$ npm start
 ```
 
 
