@@ -1,11 +1,12 @@
 {
 	"name": "milligram-starter",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A super simple boilerplate project with Milligram.",
 	"homepage": "https://milligram.github.io",
 	"repository": "milligram/milligram-starter",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"private": "true",
 	"engines": {
 		"node": ">=4"
 	},
