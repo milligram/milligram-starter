@@ -1,3 +1,3 @@
 'use strict';
 
-console.log('Hello world!');
+console.info('Yeah!! Milligram is amazing.');

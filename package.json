@@ -1,6 +1,6 @@
 {
 	"name": "milligram-starter",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A super simple boilerplate project with Milligram.",
 	"homepage": "https://milligram.github.io",
 	"repository": "milligram/milligram-starter",
@@ -22,13 +22,14 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "run-s clean bower build && run-p watch serve",
+		"start": "run-s clean build bower && run-p watch serve",
 		"clean": "rimraf dist",
-		"bower": "bower i",
+		"bower": "ncp bower_components dist/lib",
 		"build": "ncp src dist",
 		"watch": "onchange src/* -- run-s build",
 		"serve": "browser-sync --no-notify start -s dist -f dist",
-		"test": "run-s clean bower build",
+		"test": "run-s clean build bower",
+		"postinstall": "bower i",
 		"prestart": "npm i"
 	}
 }

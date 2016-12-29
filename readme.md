@@ -6,8 +6,8 @@
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/djotpoy1698b3k9k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram-starter)
 [![Codacy Status](https://img.shields.io/codacy/grade/13f5caac73ed4964a2394aa857ebc3a2/master.svg)](https://www.codacy.com/app/milligram/milligram-starter/dashboard)
 [![Dependencies Status](https://david-dm.org/milligram/milligram-starter.svg)](https://travis-ci.org/milligram/milligram-starter?branch=master)
-[![Download Status](https://img.shields.io/npm/dt/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
 [![Version Status](https://badge.fury.io/js/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
+[![Download Status](https://img.shields.io/npm/dt/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
 
 
@@ -16,13 +16,16 @@
 It offers a super simple boilerplate project with Milligram.
 
 
-## Getting Started
-
-First install the CLI for getting started with Milligram.
+## Install
 
 ```sh
 $ npm install -g milligram-cli
 ```
+
+*NOTE: Install this npm package with `-g` or `--global` to global use.*
+
+
+## Usage
 
 Create a new app using the command `milligram init`, then install dependencies and run with `npm start`.
 
@@ -63,7 +66,7 @@ $ npm start
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram-starter/blob/master/.github/contributing.md).
 
 
 ## License
