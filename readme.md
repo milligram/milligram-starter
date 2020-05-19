@@ -1,4 +1,4 @@
-<a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
+<a align="center" href="https://milligram.io"><img width="100%" src="https://milligram.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework"></a>
 
 > A super simple boilerplate project with Milligram.
 
@@ -10,65 +10,78 @@
 [![Download Status](https://img.shields.io/npm/dt/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
 
+## Why it's awesome
 
-## Why it's awesome?
+Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
 
-It offers a super simple boilerplate project with Milligram.
+## Getting Started
 
-
-## Install
+**Install with npm**
 
 ```sh
 $ npm install -g milligram-cli
 ```
 
-*NOTE: Install this npm package with `-g` or `--global` to global use.*
+**Install with Yarn**
 
+```sh
+$ yarn global add milligram-cli
+```
+
+**Run with npx (without installing)**
+
+```sh
+$ npx milligram-cli [<command>] [<options>]
+```
 
 ## Usage
 
-Create a new app using the command `milligram init`, then install dependencies and run with `npm start`.
-
 ```sh
-$ milligram init new_app
-$ cd new_app
-$ npm start
+$ milligram --help
+
+  Usage:
+
+    $ milligram [<directory>] [<options>]
+
+  Options:
+
+    -h, --help              Display help information
+    -v, --version           Output version
+
+  Examples:
+
+    $ milligram my_milligram_app # default: milligram_app
 ```
 
+Now, create a new Milligram app using the command `$ milligram`, then install dependencies and run with `npm run start`.
 
 ## Available Commands
 
 - `npm run start` - starts the development server with hot reloading enabled
-
 - `npm run build` - generates the distribution files
-
-- `npm run bower` - install all dependencies
-
+- `npm run lint` - check with code linter
 - `npm run test` - start the test runner
-
 
 ## Table of Contents
 
-- [Getting Started](http://milligram.github.io/#getting-started)
-- [Typography](http://milligram.github.io/#typography)
-- [Blockquotes](http://milligram.github.io/#blockquotes)
-- [Buttons](http://milligram.github.io/#buttons)
-- [Lists](http://milligram.github.io/#lists)
-- [Forms](http://milligram.github.io/#forms)
-- [Tables](http://milligram.github.io/#tables)
-- [Grids](http://milligram.github.io/#grids)
-- [Codes](http://milligram.github.io/#codes)
-- [Utilities](http://milligram.github.io/#utilities)
-- [Tips](http://milligram.github.io/#tips)
-- [Browser Support](http://milligram.github.io/#browser-support)
-- [Examples](http://milligram.github.io/#examples)
-
+- [Getting Started](https://milligram.io/#getting-started)
+- [Typography](https://milligram.io/#typography)
+- [Blockquotes](https://milligram.io/#blockquotes)
+- [Buttons](https://milligram.io/#buttons)
+- [Lists](https://milligram.io/#lists)
+- [Forms](https://milligram.io/#forms)
+- [Tables](https://milligram.io/#tables)
+- [Grids](https://milligram.io/#grids)
+- [Code](https://milligram.io/#code)
+- [Utilities](https://milligram.io/#utilities)
+- [Tips](https://milligram.io/#tips)
+- [Browser Support](https://milligram.io/#browser-support)
+- [Examples](https://milligram.io/#examples)
 
 ## Contributing
 
 Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram-starter/blob/master/.github/contributing.md).
 
-
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
