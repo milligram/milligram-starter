@@ -1,35 +1,53 @@
 {
-	"name": "milligram-starter",
-	"version": "0.0.6",
-	"description": "A super simple boilerplate project with Milligram.",
-	"homepage": "https://milligram.github.io",
-	"repository": "milligram/milligram-starter",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"private": "true",
-	"engines": {
-		"node": ">=4"
-	},
-	"dependencies": {
-		"milligram": "latest"
-	},
-	"devDependencies": {
-		"bower": "^1.8.0",
-		"browser-sync": "^2.18.2",
-		"ncp": "^2.0.0",
-		"npm-run-all": "^3.1.2",
-		"onchange": "^3.2.0",
-		"rimraf": "^2.5.4"
-	},
-	"scripts": {
-		"start": "run-s clean build bower && run-p watch serve",
-		"clean": "rimraf dist",
-		"bower": "ncp bower_components dist/lib",
-		"build": "ncp src dist",
-		"watch": "onchange src/* -- run-s build",
-		"serve": "browser-sync --no-notify start -s dist -f dist",
-		"test": "run-s clean build bower",
-		"postinstall": "bower i",
-		"prestart": "npm i"
-	}
+  "name": "milligram-starter",
+  "version": "0.0.6",
+  "description": "A super simple boilerplate project with Milligram.",
+  "homepage": "https://milligram.io",
+  "repository": "milligram/milligram-starter",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "milligram": "latest"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.7",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
+    "ncp": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "prettier-standard": "^16.3.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "start": "run-p watch serve",
+    "build": "rimraf dist && ncp src dist && ncp bower_components dist/lib",
+    "watch": "onchange src/* -- npm run build",
+    "serve": "browser-sync --no-notify start -s dist -f dist",
+    "test": "npm run build",
+    "lint": "prettier-standard --check",
+    "postinstall": "bower i",
+    "prestart": "npm i"
+  },
+  "engines": {
+    "node": "^12.16.2",
+    "npm": "^6.14.4"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  }
 }
