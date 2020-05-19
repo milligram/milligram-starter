@@ -6,7 +6,6 @@
   "repository": "milligram/milligram-starter",
   "license": "MIT",
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
-  "private": true,
   "dependencies": {
     "milligram": "latest"
   },
